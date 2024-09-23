@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Home from './pages/LandingPage/index.jsx'
+import Home from './pages/Home'
+import Browse from './pages/Home'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
