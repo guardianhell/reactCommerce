@@ -2,8 +2,8 @@ import React from 'react'
 
 const JumboTron = () => {
     return (
-        <div>
-            <div className="carousel w-full h-[500px]">
+        <div className='p-10'>
+            <div className="carousel w-full h-[400px] rounded-2xl ">
                 <div id="item1" className="carousel-item w-full">
                     <img
                         src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"

@@ -3,7 +3,7 @@ import Navbar from '../../../pages/Home/Navbar'
 
 const DefaultLayout = ({ children }) => {
     return (
-        <div>
+        <div className='h-screen'>
             <Navbar />
             {children}
         </div>

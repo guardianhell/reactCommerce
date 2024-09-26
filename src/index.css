@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 * {
-  background: rgba(55, 54, 54, 0.578);
-  color: white;
+  background: whitesmoke;
+  color: #52525b;
 }
