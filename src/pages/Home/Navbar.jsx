@@ -9,9 +9,9 @@ const Navbar = () => {
                     <img src='Acme-Logo.png' width={200} height={100}></img>
                 </div>
                 <div className='flex p-8 gap-2 h-30'>
-                    <button className='hover:bg-zinc-400/30 rounded pl-3 pr-3 font-bold'>Product</button>
-                    <button className='hover:bg-zinc-400/30 rounded pl-3 pr-3 font-bold'>Games</button>
-                    <InputBox />
+                    <button className='flex-none hover:bg-zinc-400/30 rounded pl-3 pr-3 font-bold'>Product</button>
+                    <button className='flex-none hover:bg-zinc-400/30 rounded pl-3 pr-3 font-bold'>Games</button>
+                    <InputBox className='grow' />
 
                     {/* <div className='avatar absolute right-0'>
                         <div className="ring-primary ring-offset-base-100 w-8 rounded-full ring ring-offset-2 mr-8">
