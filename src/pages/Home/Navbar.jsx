@@ -6,7 +6,7 @@ const Navbar = () => {
         <header className='relative z-20 pt-5'>
             <nav className='flex flex-wrap items-center'>
                 <div className='pl-10'>
-                    <img src='netflix-logo-icon.png' width={200} height={100}></img>
+                    <img src='Acme-Logo.png' width={200} height={100}></img>
                 </div>
                 <div className='flex p-8 gap-2 h-30'>
                     <button className='hover:bg-zinc-400/30 rounded pl-3 pr-3 font-bold'>Product</button>

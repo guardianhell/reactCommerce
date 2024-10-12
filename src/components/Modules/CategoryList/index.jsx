@@ -4,7 +4,7 @@ import CarouselLayout from '../../Layouts/CarouselLayout'
 
 const CategoryList = ({ title }) => {
     return (
-        <section className='bg-transparent text-white py-4 px-11'>
+        <section className=' text-white py-4 px-11'>
             <h3 className='bg-transparent text-xl font-semibold mb-2 my-5'>{title}</h3>
             <CarouselLayout>
                 <ProductCard></ProductCard>

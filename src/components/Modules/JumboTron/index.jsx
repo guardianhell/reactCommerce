@@ -2,26 +2,26 @@ import React from 'react'
 
 const JumboTron = () => {
     return (
-        <div className='p-10'>
-            <div className="carousel w-full h-[400px] rounded-2xl ">
+        <div className='relative p-10'>
+            <div className="relative carousel w-[60%] h-[350px] rounded-2xl left-1/2 -translate-x-1/2 ">
                 <div id="item1" className="carousel-item w-full">
                     <img
-                        src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+                        src="Mario.jpg"
                         className="w-full" />
                 </div>
                 <div id="item2" className="carousel-item w-full">
                     <img
-                        src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+                        src="game_wallpaper_thumbnail__sova_valorant_by_ananttripathi_de9bpv4-fullview.jpg"
                         className="w-full" />
                 </div>
                 <div id="item3" className="carousel-item w-full">
                     <img
-                        src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+                        src="mobile-legends-bang-bang.jpg"
                         className="w-full" />
                 </div>
                 <div id="item4" className="carousel-item w-full">
                     <img
-                        src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+                        src="thumb-099-dota-2-4.jpg"
                         className="w-full" />
                 </div>
             </div>
