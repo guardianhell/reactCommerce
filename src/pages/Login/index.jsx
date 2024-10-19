@@ -36,12 +36,12 @@ const Login = () => {
                     </label>
                 </div>
                 <div className='flex flex-col items-center my-2 p-4'>
-                    <button className='bg-stone-300 px-20 py-2 rounded-lg'>Login</button>
+                    <button className='bg-stone-300 px-20 py-2 rounded-lg hover:bg-stone-500 hover:text-white'>Login</button>
                 </div>
 
                 <div className='relative bg-zinc-500 h-[1.5px] w-[10%] rounded left-1/2 -translate-x-1/2'></div>
                 <div className='flex flex-col items-center my-2 p-4'>
-                    <button className='bg-lime-300 px-20 py-2 rounded-lg'>Register</button>
+                    <button className='bg-lime-300 px-20 py-2 rounded-lg hover:bg-lime-500 hover:text-white'>Register</button>
                 </div>
             </div>
         </DefaultLayout>

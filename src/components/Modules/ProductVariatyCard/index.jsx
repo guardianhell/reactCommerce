@@ -5,7 +5,7 @@ const ProductVariatyCard = ({ data }) => {
     return (
         <div className=''>
             <button className=''>
-                <div className='flex flex-row gap-2 bg-amber-300 rounded-full px-6 py-1 gap-4 hover:bg-amber-500'>
+                <div className='transition flex flex-row gap-2 bg-amber-300 rounded-full px-6 py-1 gap-4 hover:bg-amber-500 hover:duration-500 active:bg-amber-500'>
                     <div className='flex bg-transparent justify-center items-center'>
                         <PiCoinVerticalThin className='bg-transparent text-red-500' size={30} />
                         <div className='flex bg-transparent text-stone-500 text-xs'>100</div>

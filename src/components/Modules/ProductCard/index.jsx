@@ -13,7 +13,7 @@ const ProductCard = ({ data }) => {
                 <h2 className="card-title">Product Name</h2>
                 <p>Mauris at tellus scelerisque risus commodo luctus sit amet vel neque. Phasellus sed viverra enim. Proin molestie nunc eu finibus.</p>
                 <div className="pt-2 card-actions">
-                    <button className="btn btn-primary">Buy Now</button>
+                    <button className="btn bg-lime-300">Buy Now</button>
                 </div>
             </div>
         </div>
