@@ -5,13 +5,13 @@ const ProductCard = ({ data }) => {
         <div className="carousel-item card bg-base-100 w-96 shadow-xl">
             <figure className="px-10 pt-10">
                 <img
-                    src="ant.jpg"
+                    src={data.image}
                     alt="Shoes"
                     className="rounded-xl" />
             </figure>
             <div className="card-body items-center text-center">
-                <h2 className="card-title">Product Name</h2>
-                <p>Mauris at tellus scelerisque risus commodo luctus sit amet vel neque. Phasellus sed viverra enim. Proin molestie nunc eu finibus.</p>
+                <h2 className="card-title">{data.name}</h2>
+                <p>{data.publisher}</p>
                 <div className="pt-2 card-actions">
                     <button className="btn bg-lime-300">Buy Now</button>
                 </div>
