@@ -1,7 +1,10 @@
 import React from 'react'
 import DefaultLayout from '../../components/Layouts/DefaultLayout'
+import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
+
+    const navigate = useNavigate()
     return (
         <DefaultLayout>
             <div className='mt-40'>
@@ -41,7 +44,9 @@ const Login = () => {
 
                 <div className='relative bg-zinc-500 h-[1.5px] w-[10%] rounded left-1/2 -translate-x-1/2'></div>
                 <div className='flex flex-col items-center my-2 p-4'>
-                    <button className='bg-lime-300 px-20 py-2 rounded-lg hover:bg-lime-500 hover:text-white'>Register</button>
+                    <button
+                        onClick={() => { navigate("/register") }}
+                        className='bg-lime-300 px-20 py-2 rounded-lg hover:bg-lime-500 hover:text-white'>Register</button>
                 </div>
             </div>
         </DefaultLayout>

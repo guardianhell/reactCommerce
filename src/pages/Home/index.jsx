@@ -6,6 +6,8 @@ import { useEffect } from 'react'
 import { getVoucher } from '../../utils/getVoucher'
 import { useState } from 'react'
 import { getListDTU } from '../../utils/getListDTU'
+import { useAtom } from 'jotai/react'
+import { userData } from '../../jotai/atoms'
 
 const Home = () => {
 
@@ -15,14 +17,15 @@ const Home = () => {
 
     useEffect(() => {
         getVoucher().then((result) => setVoucherList(result))
-        getListDTU().then((result) => setGamesList(result))
+        // getListDTU().then((result) => setGamesList(result))
+        window.scrollTo(0, 0)
     }, [])
 
     return (
         <DefaultLayout>
             <JumboTron />
             <CategoryList title={"Digital Voucher"} data={voucherList} />
-            <CategoryList title={"Games"} data={gameList} />
+            {/* <CategoryList title={"Games"} data={gameList} /> */}
         </DefaultLayout>
     )
 }
