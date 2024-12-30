@@ -31,14 +31,18 @@ export const registerApi = async (firstName, lastName, email, password, reTypePa
     }
 }
 
-export const loginApi = async (data) => {
+export const loginApi = async (email,password) => {
     try {
         const loginData = {
-            email: data.email,
-            password: data.password
+            email: email,
+            password: password
         }
 
         const loginResponse = await authApiInstance.post("/login", loginData).then((res) => {
+
+            console.log(res);
+            
+
             return res.data
         }).catch((error) => {
             console.log(error);

@@ -50,24 +50,30 @@ const Register = () => {
 
     const submit = () => {
 
+        try {
+
+            const response = registerApi(firstName, lastName, email, password, reTypePassword).then((res) => {
+    
+                if (res.status == 200) {
+                    navigate("/")
+                }
+    
+            }).catch((error) => {
+                console.log(error);
+                const errorData = {
+                    Code: "400",
+                    message: error.message
+                }
+                return errorData
+            })
+    
+            return response
+            
+        } catch (error) {
+            return error
+        }
 
 
-        const response = registerApi(firstName, lastName, email, password, reTypePassword).then((res) => {
-
-            if (res.status == 200) {
-                navigate("/")
-            }
-
-        }).catch((error) => {
-            console.log(error);
-            const errorData = {
-                Code: "400",
-                message: error.message
-            }
-            return errorData
-        })
-
-        return response
 
     }
 
